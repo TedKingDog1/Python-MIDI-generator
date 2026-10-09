@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Music Generator</title>
+</head>
+
+<body>
+
+    <h1>🎵 AI Music Generator</h1>
+
+    <form action="/generate" method="get">
+
+        <label for="prompt">Song idea</label>
+        <br>
+
+        <textarea
+            id="prompt"
+            name="prompt"
+            rows="4"
+            cols="50"
+            placeholder="Describe the song you want..."
+        ></textarea>
+
+        <br><br>
+
+        <label for="bpm">BPM</label>
+        <br>
+
+        <input
+            type="number"
+            id="bpm"
+            name="bpm"
+            value="90"
+            min="40"
+            max="240"
+        >
+
+        <br><br>
+
+        <label for="key">Key</label>
+        <br>
+
+        <select id="key" name="key">
+            <option>C</option>
+            <option>C#</option>
+            <option>D</option>
+            <option>D#</option>
+            <option>E</option>
+            <option>F</option>
+            <option>F#</option>
+            <option>G</option>
+            <option>G#</option>
+            <option>A</option>
+            <option>A#</option>
+            <option>B</option>
+        </select>
+
+        <br><br>
+
+        <label for="mode">Mode</label>
+        <br>
+
+        <select id="mode" name="mode">
+            <option value="major">Major</option>
+            <option value="minor">Minor</option>
+        </select>
+
+        <br><br>
+
+        <h3>Instruments</h3>
+
+        <label>
+            <input type="checkbox" name="instruments" value="piano" checked>
+            Piano
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox" name="instruments" value="cello" checked>
+            Cello
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox" name="instruments" value="strings" checked>
+            Strings
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox" name="instruments" value="bass" checked>
+            Bass
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox" name="instruments" value="percussion" checked>
+            Percussion
+        </label>
+
+        <br><br>
+
+        <button type="submit">
+            🎼 Generate Music
+        </button>
+
+    </form>
+
+</body>
+</html>
